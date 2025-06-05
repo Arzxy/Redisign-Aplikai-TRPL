@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFBFB"
+    tools:context=".Home"
+    android:orientation="vertical">
+
+    <!--  Content  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="93dp"
+                        android:layout_height="33dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/trpl" />
+                </LinearLayout>
+
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="173dp"
+                        android:src="@drawable/img_1" />
+
+                    <!-- Card dengan teks -->
+                    <LinearLayout
+                        android:id="@+id/cardOverlay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_card_green"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TEKNOLOGI RPL"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="[Informatika]"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Wujudkan cita-citamu untuk menjadi Software Engineer yang dibutuhkan banyak industri dan memiliki gaji yang tinggi sesuai dengan permintaan"
+                            android:textColor="#FFFFFF"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="20dp">
+
+                    <LinearLayout
+                        android:id="@+id/visiSection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="10dp">
+
+                        <!-- Tombol Header -->
+<!--                    Here we use LinearLayout to make it like a button that can -->
+<!--                    later be Interactive when pressed-->
+                        <LinearLayout
+                            android:id="@+id/visiHeader"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bg_card_brown"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="16dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Visi"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/visiArrow"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/img_8" />
+                        </LinearLayout>
+                        <!-- Konten yang bisa disembunyikan -->
+                        <TextView
+                            android:id="@+id/visiContent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:padding="16dp"
+                            android:text="“Menjadi pengembangan pendidikan vokasi terdepan dalam kawasan regional untuk komunitas industri guna memenuhi kebutuhan tenaga teknis yang kompeten di bidang Rekayasa Perangkat Lunak”"
+                            android:textSize="14sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+<!--                This is also the same as the previous one, -->
+<!--                when pressed, the writing will appear-->
+                    <LinearLayout
+                        android:id="@+id/misiSection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="10dp">
+
+                        <!-- Tombol Header -->
+                        <LinearLayout
+                            android:id="@+id/misiHeader"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bg_card_brown"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="16dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Misi"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/misiArrow"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/img_8" />
+                        </LinearLayout>
+                        <!-- Konten yang bisa disembunyikan -->
+                        <TextView
+                            android:id="@+id/misiContent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:padding="16dp"
+                            android:text="“1) Menyelenggarakan pendidikan vokasi untuk menghasilkan lulusan yang kompeten di bidang software engineering yang berkualitas dan mampu beradaptasi dengan perkembangan teknologi dan dunia industri. 2) Melaksanakan penelitian terapan untuk mengembangkan pengetahuan dan inovasi Rekayasa Perangkat Lunak sesuai dengan perkembangan zaman dan teknologi. 3) Menyebarluaskan pengetahuan dan hasil penelitian kepada masyarakat luas untuk meningkatkan kualitas kehidupan.”"
+                            android:textSize="14sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+<!--                This is also the same as the previous one-->
+                    <LinearLayout
+                        android:id="@+id/tujuanSection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="10dp">
+
+                        <!-- Tombol Header -->
+                        <LinearLayout
+                            android:id="@+id/tujuanHeader"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bg_card_brown"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="16dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Tujuan"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/tujuanArrow"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/img_8" />
+                        </LinearLayout>
+                        <!-- Konten yang bisa disembunyikan -->
+                        <TextView
+                            android:id="@+id/tujuanContent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:padding="16dp"
+                            android:text="“1) Menghasilkan lulusan yang berkarakter dan berkualitas baik yang mampu bersaing dan beradaptasi dengan perkembangan teknologi. 2) Menghasilkan inovasi Teknologi Rekayasa Perangkat Lunak terbarukan yang dapat digunakan di berbagai kalangan masyarakat. 3) Menghasilkan layanan dan dampak positif dari pengembangan inovasi teknologi rekayasa perangkat lunak kepada masyarakat umum.”"
+                            android:textSize="14sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E9E9E9"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lulus dari TRPL PEI"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="kamu bakal bisa apa?"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/utamaSection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="15dp">
+
+                        <!-- Tombol Header -->
+                        <LinearLayout
+                            android:id="@+id/utamaHeader"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bg_card_white"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="16dp">
+
+                            <TextView
+                                android:id="@+id/utamaTitle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Kompetensi Utama"
+                                android:textColor="#000000"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/utamaArrow"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/img_6" />
+                        </LinearLayout>
+                        <!-- Konten yang bisa disembunyikan -->
+                        <TextView
+                            android:id="@+id/utamaContent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:padding="16dp"
+                            android:text="“Menjadi pengembangan pendidikan vokasi terdepan dalam kawasan regional untuk komunitas industri guna memenuhi kebutuhan tenaga teknis yang kompeten di bidang Rekayasa Perangkat Lunak”"
+                            android:textSize="14sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/pendukungSection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="10dp">
+
+                        <!-- Tombol Header -->
+                        <LinearLayout
+                            android:id="@+id/pendukungHeader"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bg_card_white"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="16dp">
+
+                            <TextView
+                                android:id="@+id/pendukungTitle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Kompetensi Pendukung"
+                                android:textColor="#000000"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/pendukungArrow"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/img_6" />
+                        </LinearLayout>
+                        <!-- Konten yang bisa disembunyikan -->
+                        <TextView
+                            android:id="@+id/pendukungContent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:padding="16dp"
+                            android:text="“1) Menyelenggarakan pendidikan vokasi untuk menghasilkan lulusan yang kompeten di bidang software engineering yang berkualitas dan mampu beradaptasi dengan perkembangan teknologi dan dunia industri. 2) Melaksanakan penelitian terapan untuk mengembangkan pengetahuan dan inovasi Rekayasa Perangkat Lunak sesuai dengan perkembangan zaman dan teknologi. 3) Menyebarluaskan pengetahuan dan hasil penelitian kepada masyarakat luas untuk meningkatkan kualitas kehidupan.”"
+                            android:textSize="14sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lainnyaSection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="10dp">
+
+                        <!-- Tombol Header -->
+                        <LinearLayout
+                            android:id="@+id/lainnyaHeader"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bg_card_white"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="16dp">
+
+                            <TextView
+                                android:id="@+id/lainnyaTitle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Kompetensi Lainnya"
+                                android:textColor="#000000"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/lainnyaArrow"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/img_6" />
+                        </LinearLayout>
+                        <!-- Konten yang bisa disembunyikan -->
+                        <TextView
+                            android:id="@+id/lainnyaContent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:padding="16dp"
+                            android:text="“1) Menghasilkan lulusan yang berkarakter dan berkualitas baik yang mampu bersaing dan beradaptasi dengan perkembangan teknologi. 2) Menghasilkan inovasi Teknologi Rekayasa Perangkat Lunak terbarukan yang dapat digunakan di berbagai kalangan masyarakat. 3) Menghasilkan layanan dan dampak positif dari pengembangan inovasi teknologi rekayasa perangkat lunak kepada masyarakat umum.”"
+                            android:textSize="14sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="30dp"
+                    android:paddingRight="10dp">
+
+                    <!-- Header: Teks + Gambar -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!-- Teks -->
+                        <LinearLayout
+                            android:layout_width="381dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Untuk mendapatkan kompetensi"
+                                android:textSize="19sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="diatas, maka kamu akan belajar ini:"
+                                android:textSize="19sp"
+                                android:textStyle="bold" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+<!--                                Now here to display the corousel Information about TRPL-->
+                                <androidx.viewpager2.widget.ViewPager2
+                                    android:id="@+id/viewPager"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"/>
+
+                                <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                                    android:id="@+id/dotsIndicator"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:dotsColor="#000000"
+                                    app:selectedDotColor="#1c805b"
+                                    app:dotsSize="8dp"
+                                    app:dotsSpacing="4dp"
+                                    app:layout_constraintTop_toBottomOf="@id/viewPager"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"/>
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </LinearLayout>
+
+                        <!-- Gambar -->
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/imageorg" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E9E9E9"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Daftar Kurikulum"
+                        android:paddingLeft="10dp"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+<!--                        Now here to display the semester table corousel-->
+                        <androidx.viewpager2.widget.ViewPager2
+                            android:id="@+id/viewPagerSemester"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                            android:id="@+id/dotsIndicatorSemester"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            app:dotsColor="#000000"
+                            app:selectedDotColor="#1c805b"
+                            app:dotsSize="8dp"
+                            app:dotsSpacing="4dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <!--  Footer  -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/top_shadow"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/nav_item_color"
+        app:itemTextColor="@color/nav_item_color"
+        app:labelVisibilityMode="labeled" />
+
+</LinearLayout>

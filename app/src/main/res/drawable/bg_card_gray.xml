@@ -1,0 +1,13 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="#E9E9E9" /> <!-- warna hijau tua, bisa diganti -->
+
+    <corners android:radius="16dp" /> <!-- sudut membulat -->
+
+    <padding
+        android:left="12dp"
+        android:top="12dp"
+        android:right="12dp"
+        android:bottom="12dp" />
+</shape>

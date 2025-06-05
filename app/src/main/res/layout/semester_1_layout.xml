@@ -1,0 +1,121 @@
+<!--This is for the design of the Semester Table in the home,
+which will later be displayed in the Home activity.-->
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SEMESTER 1"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:background="@drawable/bg_card_greenv2"
+            android:gravity="center"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:layout_marginTop="10dp"
+            android:padding="0dp">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#67000000" />
+            <!-- Header -->
+            <TableRow>
+                <TextView
+                    android:text="Mata Kuliah"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+                <TextView
+                    android:text="SKS"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#67000000" />
+
+            <!-- Baris data -->
+            <TableRow>
+                <TextView android:text="Aljabar Linear" android:padding="8dp"/>
+                <TextView android:text="2" android:padding="8dp" android:gravity="center"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Bahasa Inggris" android:padding="8dp"/>
+                <TextView android:text="2" android:padding="8dp" android:gravity="center"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Kewarganegaraan" android:padding="8dp"/>
+                <TextView android:text="2" android:padding="8dp" android:gravity="center"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Pancasila" android:padding="8dp"/>
+                <TextView android:text="2" android:padding="8dp" android:gravity="center"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Pengantar UI/UX" android:padding="8dp"/>
+                <TextView android:text="1" android:padding="8dp" android:gravity="center"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Praktikum UI/UX" android:padding="8dp"/>
+                <TextView android:text="2" android:padding="8dp" android:gravity="center"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Pemrograman Dasar" android:padding="8dp"/>
+                <TextView android:text="1" android:padding="8dp" android:gravity="center"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Praktikum Pemrograman Dasar" android:padding="8dp"/>
+                <TextView android:text="2" android:padding="8dp" android:gravity="center"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Workshop Perangkat Lunak Aplikasi" android:padding="8dp"/>
+                <TextView android:text="3" android:padding="8dp" android:gravity="center"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Workshop Sistem Operasi" android:padding="8dp"/>
+                <TextView android:text="2" android:padding="8dp" android:gravity="center"/>
+            </TableRow>
+
+            <!-- Total -->
+            <TableRow>
+                <TextView android:text="Total" android:padding="8dp" android:textStyle="bold"/>
+                <TextView android:text="19" android:padding="8dp" android:textStyle="bold" android:gravity="center"/>
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#67000000" />
+        </TableLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
