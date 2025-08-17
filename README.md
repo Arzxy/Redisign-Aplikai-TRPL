@@ -15,3 +15,5 @@ Proyek ini dibangun bersama oleh beberapa kontributor. Berikut daftar kolaborato
 | Sahda Larisa Kalonica   | [@todayisnica](https://github.com/todayisnica) | Backend, Frontend             |
 
 ---
+
+> 📌 *Project ini bersifat open-source dan dapat dikembangkan lebih lanjut sesuai kebutuhan.*
